@@ -4,4 +4,23 @@
     color:$f_color;
     font-size: 1.3rem;
     border: none;
+    cursor: pointer;
+}
+@mixin button_2($bg-color, $f_color){
+    padding: .9rem 2rem;
+    background-color: $bg-color;
+    color:$f_color;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+@mixin button_3($bg-color, $f_color){
+    padding: .9rem 2rem;
+    background-color: $bg-color;
+    color:$f_color;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 1.4rem 0rem;
 }

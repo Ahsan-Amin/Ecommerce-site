@@ -14,13 +14,7 @@
   font-family: "JosefinSans-Regular";
 }
 
-.main-section-title {
-  font-size: 3rem;
-  font-weight: 100;
-  padding: 1rem 0rem;
-}
-
-main {
+.hero {
   background-image: url(../images/hero-banner.png);
   padding: 5rem 0rem;
   width: 100%;
@@ -28,16 +22,127 @@ main {
   background-size: cover;
   font-family: "JosefinSans-Light";
 }
-main .container {
+.hero .hero-section-title {
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 1rem 0rem;
+}
+.hero .hero-section-paragraph {
+  padding: 1rem 0rem;
+  width: 50%;
+  line-height: 1.7rem;
+}
+.hero .container {
   margin: 0px 6rem;
-  width: 70%;
+  width: 80%;
   min-height: 400px;
 }
-
-input {
+.hero input {
   padding: 1rem 1.5rem;
   background-color: #FE6F61;
   color: white;
   font-size: 1.3rem;
   border: none;
+  cursor: pointer;
+}
+
+.Explore {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+.Explore .card-1 {
+  background-image: url(../images/collection-1.jpg);
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  margin: 1rem 2rem;
+}
+.Explore .card-1 input {
+  padding: 0.9rem 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.Explore .card-2 {
+  background-image: url(../images/collection-2.jpg);
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  margin: 1rem 2rem;
+}
+.Explore .card-2 input {
+  padding: 0.9rem 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.Explore .card-3 {
+  background-image: url(../images/collection-3.jpg);
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  margin: 1rem 2rem;
+}
+.Explore .card-3 input {
+  padding: 0.9rem 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.Product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0rem;
+}
+.Product input {
+  padding: 0.9rem 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 1.4rem 0rem;
+}
+.Product .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  line-height: 2rem;
+  margin: 2rem;
+}
+.Product .card a {
+  color: #FE6F61;
+  font-size: 1.4rem;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
