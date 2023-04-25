@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "JosefinSans-Light";
+  src: url("../fonts/JosefinSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: url("../fonts/JosefinSans-Regular.ttf") format("truetype");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "JosefinSans-Regular";
+}
+
+.main-section-title {
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 1rem 0rem;
+}
+
+main {
+  background-image: url(../images/hero-banner.png);
+  padding: 5rem 0rem;
+  width: 100%;
+  background-position: relative;
+  background-size: cover;
+  font-family: "JosefinSans-Light";
+}
+main .container {
+  margin: 0px 6rem;
+  width: 70%;
+  min-height: 400px;
+}
+
+input {
+  padding: 1rem 1.5rem;
+  background-color: #FE6F61;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+}/*# sourceMappingURL=main.css.map */
