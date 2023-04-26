@@ -12,3 +12,15 @@
     text-transform: uppercase;
      margin: 1rem 2rem;
 }
+// # Sale Card
+@mixin Sale-card($bg-img){
+    // width: 40%;
+    background-image: $bg-img;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px 50px;
+    margin: 20px  20px;
+}

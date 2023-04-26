@@ -14,6 +14,13 @@
   font-family: "JosefinSans-Regular";
 }
 
+a {
+  color: black;
+}
+a:hover {
+  color: #FE6F61;
+}
+
 .hero {
   background-image: url(../images/hero-banner.png);
   padding: 5rem 0rem;
@@ -46,13 +53,21 @@
   cursor: pointer;
 }
 
-.Explore {
+.Explore .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
 }
-.Explore .card-1 {
+.Explore .card input {
+  padding: 0.9rem 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.Explore .card .card-1 {
   background-image: url(../images/collection-1.jpg);
   background-position: center;
   background-size: auto;
@@ -65,15 +80,7 @@
   text-transform: uppercase;
   margin: 1rem 2rem;
 }
-.Explore .card-1 input {
-  padding: 0.9rem 2rem;
-  background-color: rgba(255, 255, 255, 0);
-  color: black;
-  font-size: 1.3rem;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.Explore .card-2 {
+.Explore .card .card-2 {
   background-image: url(../images/collection-2.jpg);
   background-position: center;
   background-size: auto;
@@ -86,15 +93,7 @@
   text-transform: uppercase;
   margin: 1rem 2rem;
 }
-.Explore .card-2 input {
-  padding: 0.9rem 2rem;
-  background-color: rgba(255, 255, 255, 0);
-  color: black;
-  font-size: 1.3rem;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.Explore .card-3 {
+.Explore .card .card-3 {
   background-image: url(../images/collection-3.jpg);
   background-position: center;
   background-size: auto;
@@ -107,14 +106,6 @@
   text-transform: uppercase;
   margin: 1rem 2rem;
 }
-.Explore .card-3 input {
-  padding: 0.9rem 2rem;
-  background-color: rgba(255, 255, 255, 0);
-  color: black;
-  font-size: 1.3rem;
-  border: 1px solid black;
-  cursor: pointer;
-}
 
 .Product {
   display: flex;
@@ -122,6 +113,9 @@
   flex-direction: column;
   align-items: center;
   padding: 6rem 0rem;
+}
+.Product h1 {
+  font-size: 2.5rem;
 }
 .Product input {
   padding: 0.9rem 2rem;
@@ -134,15 +128,96 @@
   margin: 1.4rem 0rem;
 }
 .Product .card {
+  margin: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
   line-height: 2rem;
-  margin: 2rem;
+  text-align: center;
 }
 .Product .card a {
-  color: #FE6F61;
   font-size: 1.4rem;
   font-weight: bold;
+}
+.Product .card h4 {
+  color: #FE6F61;
+}
+
+.Sale .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 4rem;
+}
+.Sale .card h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.Sale .card input {
+  padding: 0.9rem 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1.4rem 0rem;
+  border: none;
+  border-bottom: solid 2px white;
+}
+.Sale .card .card-1 {
+  background-image: url(../images/cta-1.jpg);
+  background-size: cover;
+  color: white;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px 50px;
+  margin: 20px 20px;
+}
+.Sale .card .card-2 {
+  background-image: url(../images/cta-2.jpg);
+  background-size: cover;
+  color: white;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px 50px;
+  margin: 20px 20px;
+}
+
+.flex-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-icon {
+  background-color: #FE6F61;
+  padding: 0.8rem;
+  border-radius: 3rem;
+  align-items: center;
+}
+.card-icon img {
+  filter: brightness(0) invert(1);
+  width: 100%;
+  height: auto;
+}
+
+.Service .card {
+  justify-content: center;
+  line-height: 1.5rem;
+}
+.Service .card .title {
+  margin: 1rem;
+}
+.Service .card .card-1 {
+  margin: 4rem 2rem;
+}
+.Service .card .card-2 {
+  margin: 4rem 2rem;
+}
+.Service .card .card-3 {
+  margin: 4rem 2rem;
+}
+.Service .card .card-4 {
+  margin: 4rem 2rem;
 }/*# sourceMappingURL=main.css.map */

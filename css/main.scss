@@ -20,6 +20,12 @@ text-decoration: none;
 box-sizing: border-box;
 font-family: 'JosefinSans-Regular';
 }
+a{
+    color: $font-primary-color;
+    &:hover{
+        color: $primary-color;
+    }
+}
 
 
 // # Header
@@ -58,32 +64,26 @@ input{
 // # Explore Section
 
 .Explore{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+        input{
+            @include button_2(rgba(255, 255, 255, 0),$font-primary-color);
+        }
 
 .card-1{
     @include Explore-Card(url(../images/collection-1.jpg));
-    input{
-        @include button_2(rgba(255, 255, 255, 0),$font-primary-color);
 
-    }
 }
 .card-2{
     @include Explore-Card(url(../images/collection-2.jpg));
-    input{
-        @include button_2(rgba(255, 255, 255, 0),$font-primary-color);
-    }
 }
-
 .card-3{
     @include Explore-Card(url(../images/collection-3.jpg));  
-    input{
-        @include button_2(rgba(255, 255, 255, 0),$font-primary-color);
-    }
 }
-
+    }
 }
 
 // # Products Sectoin
@@ -94,27 +94,103 @@ input{
     flex-direction: column;
     align-items: center;
     padding: 6rem  0rem;
+    h1{
+        font-size: 2.5rem;
+    }
     input{
         @include button_3(rgba(255, 255, 255, 0),$font-primary-color);
 
     }
     .card{
+        margin: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 2rem;
         line-height: 2rem;
-        a{
-            color: $primary-color;
+        text-align: center;
+        a{       
             font-size: 1.4rem;
             font-weight: bold;
         }
-margin: 2rem;
+      
+        h4{
+            color: $primary-color;
+           }
+       } 
 
-    }
-    
 }
 
+//  # Sale Section
+.Sale{
+    .card{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 4rem;
+        
+
+        h1{
+            font-size: 2rem;
+            line-height: 2.5rem;
+            
+        }
+        input{
+            @include button_4(rgba(255, 255, 255, 0),$bg-color);
+        }
+
+        .card-1{
+             @include Sale-card  ( url(../images/cta-1.jpg)); 
+        }
+        .card-2{
+            @include Sale-card  ( url(../images/cta-2.jpg));
+        }
+    }
+}
+
+
+// #Reuseable Code
+
+.flex-display{
+    display: flex;
+    flex-wrap: wrap;
+}
+//  # Service Section
+.card-icon{
+    background-color: $primary-color;
+    padding: .8rem;
+    border-radius: 3rem;
+    align-items: center;
+    img{
+        filter: brightness(0) invert(1);
+        width: 100%;
+        height: auto;
+    }
+}
+.Service{
+    .card{
+        justify-content: center;
+        line-height: 1.5rem;
+    
+        .title{
+            margin: 1rem;
+        }
+        .card-1{
+            margin: 4rem 2rem;
+            
+        }
+        .card-2{
+            margin: 4rem 2rem;
+        }
+        .card-3{
+            margin: 4rem 2rem;
+        }
+        .card-4{
+            margin:4rem  2rem;
+        }
+    }
+}
 
 
 // # Footer
