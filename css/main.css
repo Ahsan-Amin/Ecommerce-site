@@ -12,6 +12,7 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "JosefinSans-Regular";
+  list-style: none;
 }
 
 a {
@@ -28,6 +29,7 @@ a:hover {
   background-position: relative;
   background-size: cover;
   font-family: "JosefinSans-Light";
+  margin-top: 100px;
 }
 .hero .hero-section-title {
   font-size: 3rem;
@@ -52,6 +54,9 @@ a:hover {
   border: none;
   cursor: pointer;
 }
+.hero input:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
 
 .Explore .card {
   display: flex;
@@ -66,6 +71,9 @@ a:hover {
   font-size: 1.3rem;
   border: 1px solid black;
   cursor: pointer;
+}
+.Explore .card input:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 .Explore .card .card-1 {
   background-image: url(../images/collection-1.jpg);
@@ -127,6 +135,12 @@ a:hover {
   cursor: pointer;
   margin: 1.4rem 0rem;
 }
+.Product input:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  background-color: #FE6F61;
+  border: none;
+}
 .Product .card {
   margin: 2rem;
   display: flex;
@@ -164,6 +178,10 @@ a:hover {
   border: none;
   border-bottom: solid 2px white;
 }
+.Sale .card input:hover {
+  color: #FE6F61;
+  border-color: #FE6F61;
+}
 .Sale .card .card-1 {
   background-image: url(../images/cta-1.jpg);
   background-size: cover;
@@ -188,6 +206,7 @@ a:hover {
 .flex-display {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-icon {
@@ -381,10 +400,11 @@ ul {
   font-family: "Work Sans", sans-serif;
   text-align: center;
   transition: all 0.3s ease 0s;
+  margin: 1rem 0.5rem;
 }
 
 .product-grid:hover {
-  box-shadow: 0 0 20px -10px rgba(237, 29, 36, 0.3);
+  box-shadow: 0 0 20px -10px #FE6F61;
 }
 
 .product-grid .product-image {
@@ -481,7 +501,7 @@ ul {
 
 .product-grid .product-links li a:hover {
   color: #fff;
-  background-color: #ed1d24;
+  background-color: #FE6F61;
 }
 
 .product-grid .product-content {
@@ -517,11 +537,11 @@ ul {
 }
 
 .product-grid .title a:hover {
-  color: #ed1d24;
+  color: #FE6F61;
 }
 
 .product-grid .price {
-  color: #ed1d24;
+  color: #FE6F61;
   font-size: 18px;
   font-weight: 700;
 }
@@ -529,5 +549,532 @@ ul {
 @media screen and (max-width: 990px) {
   .product-grid {
     margin: 0 0 30px;
+  }
+}
+.explore-title {
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 3rem 0rem;
+  text-align: center;
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.product-card .card-1 .container {
+  position: relative;
+  color: black;
+  padding: 1rem;
+}
+.product-card .card-1 .container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #B2E24F;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product-card .card-1 .container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  -webkit-clip-path: circle(150px at 80% 20%);
+          clip-path: circle(150px at 80% 20%);
+  transition: 0.5% ease-in-out;
+}
+.product-card .card-1 .container .card:hover::before {
+  -webkit-clip-path: circle(300px at 80% -20%);
+          clip-path: circle(300px at 80% -20%);
+}
+.product-card .card-1 .container .card:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12rem;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(225, 255, 255, 0.04);
+}
+.product-card .card-1 .container .card .imgBx {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  right: 20%;
+  transition: 0.5s;
+}
+.product-card .card-1 .container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+.product-card .card-1 .container .card:hover .imgBx img {
+  position: absolute;
+  top: 30%;
+  right: -100%;
+  transform: translate(-50%, -35%) rotate(-25deg);
+  transition: 1s;
+}
+.product-card .card-1 .container .card .contantBx {
+  right: 20%;
+  top: 70%;
+  position: absolute;
+  height: 100px;
+  transition: 1s;
+  z-index: 10;
+  line-height: 2rem;
+}
+.product-card .card-1 .container .card:hover .contantBx {
+  height: 210px;
+  top: 55%;
+}
+.product-card .card-1 .container .card .contantBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.product-card .card-1 .container .card .contantBx .size,
+.product-card .card-1 .container .card .contantBx .color {
+  display: flex;
+  justify-content: left;
+  transition: 0.5s;
+  margin: 1rem 0rem;
+}
+.product-card .card-1 .container .card .contantBx .size span {
+  color: black;
+  padding: 0.1rem 0.5rem;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  margin: 0px 5px;
+}
+.product-card .card-1 .container .card .contantBx .color .red {
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-1 .container .card .contantBx .color .green {
+  background-color: green;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-1 .container .card .contantBx .color .blue {
+  background-color: blue;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-1 .container .card .contantBx .color .white {
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-1 .container .card .contantBx .buy-btn a {
+  text-decoration: none;
+  color: #B2E24F;
+  background-color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+.product-card .card-1 .container .card .contantBx .buy-btn a:hover {
+  box-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+.product-card .card-2 .container {
+  position: relative;
+  color: black;
+  padding: 1rem;
+}
+.product-card .card-2 .container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #EEBDEA;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product-card .card-2 .container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #D8DADC;
+  -webkit-clip-path: circle(150px at 80% 20%);
+          clip-path: circle(150px at 80% 20%);
+  transition: 0.5% ease-in-out;
+}
+.product-card .card-2 .container .card:hover::before {
+  -webkit-clip-path: circle(300px at 80% -20%);
+          clip-path: circle(300px at 80% -20%);
+}
+.product-card .card-2 .container .card:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12rem;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(225, 255, 255, 0.04);
+}
+.product-card .card-2 .container .card .imgBx {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  right: 20%;
+  transition: 0.5s;
+}
+.product-card .card-2 .container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+.product-card .card-2 .container .card:hover .imgBx img {
+  position: absolute;
+  top: 30%;
+  right: -100%;
+  transform: translate(-50%, -35%) rotate(-25deg);
+  transition: 1s;
+}
+.product-card .card-2 .container .card .contantBx {
+  right: 20%;
+  top: 70%;
+  position: absolute;
+  height: 100px;
+  transition: 1s;
+  z-index: 10;
+  line-height: 2rem;
+}
+.product-card .card-2 .container .card:hover .contantBx {
+  height: 210px;
+  top: 55%;
+}
+.product-card .card-2 .container .card .contantBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.product-card .card-2 .container .card .contantBx .size,
+.product-card .card-2 .container .card .contantBx .color {
+  display: flex;
+  justify-content: left;
+  transition: 0.5s;
+  margin: 1rem 0rem;
+}
+.product-card .card-2 .container .card .contantBx .size span {
+  color: black;
+  padding: 0.1rem 0.5rem;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  margin: 0px 5px;
+}
+.product-card .card-2 .container .card .contantBx .color .red {
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-2 .container .card .contantBx .color .green {
+  background-color: green;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-2 .container .card .contantBx .color .blue {
+  background-color: blue;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-2 .container .card .contantBx .color .white {
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-2 .container .card .contantBx .buy-btn a {
+  text-decoration: none;
+  color: #EEBDEA;
+  background-color: #D8DADC;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+.product-card .card-2 .container .card .contantBx .buy-btn a:hover {
+  box-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+.product-card .card-3 .container {
+  position: relative;
+  color: black;
+  padding: 1rem;
+}
+.product-card .card-3 .container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #E6CFCF;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product-card .card-3 .container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  -webkit-clip-path: circle(150px at 80% 20%);
+          clip-path: circle(150px at 80% 20%);
+  transition: 0.5% ease-in-out;
+}
+.product-card .card-3 .container .card:hover::before {
+  -webkit-clip-path: circle(300px at 80% -20%);
+          clip-path: circle(300px at 80% -20%);
+}
+.product-card .card-3 .container .card:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12rem;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(225, 255, 255, 0.04);
+}
+.product-card .card-3 .container .card .imgBx {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  right: 20%;
+  transition: 0.5s;
+}
+.product-card .card-3 .container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+.product-card .card-3 .container .card:hover .imgBx img {
+  position: absolute;
+  top: 30%;
+  right: -100%;
+  transform: translate(-50%, -35%) rotate(-25deg);
+  transition: 1s;
+}
+.product-card .card-3 .container .card .contantBx {
+  right: 20%;
+  top: 70%;
+  position: absolute;
+  height: 100px;
+  transition: 1s;
+  z-index: 10;
+  line-height: 2rem;
+}
+.product-card .card-3 .container .card:hover .contantBx {
+  height: 210px;
+  top: 55%;
+}
+.product-card .card-3 .container .card .contantBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.product-card .card-3 .container .card .contantBx .size,
+.product-card .card-3 .container .card .contantBx .color {
+  display: flex;
+  justify-content: left;
+  transition: 0.5s;
+  margin: 1rem 0rem;
+}
+.product-card .card-3 .container .card .contantBx .size span {
+  color: black;
+  padding: 0.1rem 0.5rem;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  margin: 0px 5px;
+}
+.product-card .card-3 .container .card .contantBx .color .red {
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-3 .container .card .contantBx .color .green {
+  background-color: green;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-3 .container .card .contantBx .color .blue {
+  background-color: blue;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-3 .container .card .contantBx .color .white {
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.product-card .card-3 .container .card .contantBx .buy-btn a {
+  text-decoration: none;
+  color: #E6CFCF;
+  background-color: red;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+.product-card .card-3 .container .card .contantBx .buy-btn a:hover {
+  box-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+
+.second nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+  position: fixed;
+  top: 0%;
+  background-color: white;
+  width: 100%;
+  z-index: 11111;
+}
+
+#check-box {
+  display: none;
+}
+
+.check-btn {
+  display: none;
+}
+
+.second nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.second nav ul li {
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+.second nav ul li a {
+  color: black;
+  font-weight: 500;
+}
+
+@media (min-width: 500px) and (max-width: 990px) {
+  .second .check-btn {
+    font-size: 2rem;
+    display: block;
+    line-height: 2rem;
+    background-color: #FE6F61;
+  }
+  .second nav ul li {
+    display: none;
+  }
+  .secend nav {
+    padding: 1.5rem 1rem;
+  }
+  .second nav .logo .img {
+    width: 20px;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  .second .check-btn {
+    font-size: 2rem;
+    display: block;
+    line-height: 2rem;
+    background-color: #FE6F61;
+  }
+  .second nav ul li {
+    display: none;
+  }
+  .second nav {
+    padding: 1.5rem 1rem;
+  }
+  .second nav .logo .img {
+    width: 100px;
+  }
+}
+@media (min-width: 0px) and (max-width: 300px) {
+  .second .check-btn {
+    font-size: 1.5rem;
+    display: block;
+    line-height: 1rem;
+    background-color: #FE6F61;
+  }
+  .second nav ul li {
+    display: none;
+  }
+  .second nav {
+    padding: 1rem;
+  }
+  .second nav .logo .img {
+    width: 100%;
+  }
+}
+/* Define the animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }/*# sourceMappingURL=main.css.map */
