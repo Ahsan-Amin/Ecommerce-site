@@ -49,11 +49,11 @@ a{
 }
 .hero-section-paragraph{
     padding: 1rem 0rem;
-    width: 50%;
+    width: 70%;
     line-height: 1.7rem;
 }
  .container{
-        margin: 0px 6rem;
+        // margin: 0px 6rem;
          width: 80%;
     min-height: 400px;
 }
@@ -537,7 +537,7 @@ ul {
         width: 20px;
     }
 }
-@media (min-width:300px) and (max-width: 500px) {
+@media (min-width:400px) and (max-width: 500px) {
     .second   .check-btn{
         font-size: 2rem;
         display: block;
@@ -555,14 +555,12 @@ ul {
         width: 100px;
     }
 }
-@media (min-width:0px) and (max-width: 300px) {
+@media (min-width:0px) and (max-width: 400px) {
     .second   .check-btn{
         font-size: 1.5rem;
         display: block;
         line-height: 1rem;
         background-color: #FE6F61;
-      
-
     }
     .second   nav ul li{
         display: none;
@@ -574,52 +572,9 @@ ul {
     .second nav .logo .img{
         width: 100%;
     }
+
+
 }
 
-    // base line animation
-      /* Define the animation */
-      @keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: none;
-        }
-      }
 
-    //   /* Define the scrollbar width */
-    //   :root {
-    //     --scrollbar-width: calc(100vw - 100%);
-    //   }
-
-    //   /* Style the section */
-    //   #base-line-animation {
-    //     opacity: 0;
-    //     transform: translateY(20px);
-    //     animation: fade-in 0.5s ease-out forwards;
-    //   }
-
-    //   /* Hide the scrollbar */
-    //   body::-webkit-scrollbar {
-    //     width: var(--scrollbar-width);
-    //     background-color: transparent;
-    //   }
-
-    //   /* Trigger the animation on scroll */
-    //   body::-webkit-scrollbar-thumb {
-    //     background-color: transparent;
-    //     background-image: linear-gradient(to top, transparent, transparent var(--scrollbar-width), black);
-    //     animation: scroll-animation 5s linear infinite;
-    //   }
-
-    //   /* Define the scroll animation */
-    //   @keyframes scroll-animation {
-    //     from {
-    //       transform: translateY(0);
-    //     }
-    //     to {
-    //       transform: translateY(-100vh);
-    //     }
-    //   }
+ 
