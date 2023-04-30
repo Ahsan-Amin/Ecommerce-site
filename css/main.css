@@ -242,7 +242,8 @@ a:hover {
   margin: 4rem 2rem;
 }
 
-.footer-link-box, .footer-brand {
+.footer-link-box,
+.footer-brand {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -276,7 +277,8 @@ a:hover {
   transition: 0.25s ease;
 }
 
-.social-link:is(:hover, :focus) {
+.social-link:is(:hover,
+:focus) {
   background: hsl(5, 100%, 69%);
   color: hsl(0, 0%, 100%);
 }
@@ -311,7 +313,8 @@ a:hover {
   transition: 0.25s ease;
 }
 
-a.footer-link:is(:hover, :focus) {
+a.footer-link:is(:hover,
+:focus) {
   color: hsl(5, 100%, 69%);
 }
 
